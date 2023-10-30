@@ -151,7 +151,12 @@ export function Profile() {
             <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
               {projectsData.map(
                 ({ img, title, description, tag, route, members }) => (
-                  <Card key={title} color="transparent" shadow={false}>
+                  <Card
+                    key={title}
+                    color="transparent"
+                    shadow={false}
+                    className="justify-between"
+                  >
                     <CardHeader
                       floated={false}
                       color="gray"
